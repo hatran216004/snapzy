@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.snapzy-wrapper {
+  overflow: hidden;
+}
+
+.snapzy-content {
+  position: relative;
+}
+
+.snapzy-nav {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.snapzy-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.snapzy-dot.active {
+  background-color: #555;
+}
+
+.snapzy-track {
+  width: 100%;
+  display: flex;
+}
+
+.snapzy-slide {
+  padding: 30px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.snapzy-pre,
+.snapzy-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.snapzy-pre {
+  left: 10px;
+}
+
+.snapzy-next {
+  right: 10px;
+}

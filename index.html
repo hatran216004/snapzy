@@ -4,6 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./src/snapzy.css" />
+    <style>
+      .slide-1 {
+        background-color: violet;
+      }
+
+      .slide-2 {
+        background-color: bisque;
+      }
+
+      .slide-3 {
+        background-color: chocolate;
+      }
+
+      .slide-4 {
+        background-color: burlywood;
+      }
+
+      .slide-5 {
+        background-color: olivedrab;
+      }
+
+      .slide-6 {
+        background-color: orange;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="slider">
+      <div class="slide-1">slide 1</div>
+      <div class="slide-2">slide 2</div>
+      <div class="slide-3">slide 3</div>
+      <div class="slide-4">slide 4</div>
+      <div class="slide-5">slide 5</div>
+      <div class="slide-6">slide 6</div>
+    </div>
+
+    <script src="./src/snapzy.js"></script>
+    <script>
+      const slider = new Snapzy('#slider', {
+        loop: true,
+        items: 3,
+        slideBy: 2
+      });
+    </script>
+  </body>
 </html>
